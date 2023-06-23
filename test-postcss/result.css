@@ -1,0 +1,8 @@
+:root {
+  --globalColor: 'brown';
+}
+
+html {
+  background-color: 'brown';
+  background-color: var(--globalColor);
+}

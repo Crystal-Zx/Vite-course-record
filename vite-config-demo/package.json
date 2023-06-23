@@ -1,0 +1,21 @@
+{
+  "name": "vite-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "此小项包含vite各配置项的常见配置说明，包括：vite.config、环境变量及css配置",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vite --mode test"
+  },
+  "devDependencies": {
+    "postcss-preset-env": "^8.4.2",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "less": "^4.1.3",
+    "lodash": "^4.17.21"
+  },
+  "type": "module"
+}

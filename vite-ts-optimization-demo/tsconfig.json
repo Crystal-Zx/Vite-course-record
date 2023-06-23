@@ -1,0 +1,9 @@
+// 配置一些 ts 的检查手段和检查规则
+{
+  "compilerOptions": {
+    "skipLibCheck": true,  // 跳过对node_modules的检查
+    "module": "ESNext",  // 默认会将 ts 转换成 es3 的语法，这里提升一点 es 的级别，不然在项目中使用 import.meta 会报错
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2017", "DOM"], // vite.config.ts 中使用 es6/6+ 的语法时需要配置上这个告诉 TS 我们当前的环境版本
+  }
+}
