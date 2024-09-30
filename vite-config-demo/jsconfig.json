@@ -1,13 +1,9 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-            "~assets/*": [
-                "src/assets/*"
-            ],
-            "~/*": [
-                "src/*"
-            ]
-        }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~assets/*": ["src/assets/*"],
+      "~/*": ["src/*"]
     }
+  }
 }

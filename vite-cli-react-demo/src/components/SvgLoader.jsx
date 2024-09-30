@@ -7,16 +7,18 @@ import svgMathRaw from "../assets/svgs/math.svg?raw"
 
 console.log("==> svgMath", svgMathUrl, svgMathRaw)
 
-export default function () {
+export default function SvgLoader() {
   return (
-    // 方式一：
-    // <div style={{ color: "red" }}>
-    //   <img src={svgMathUrl} />
-    // </div>
+    <>
+      {/* 方式一： */}
+      {/* <div style={{ color: "red" }}>
+        <img src={svgMathUrl} />
+      </div> */}
 
-    // 方式二：
-    <div style={{ color: "gray" }}>
-      <div dangerouslySetInnerHTML={{ __html: svgMathRaw }}></div>
-    </div>
+      {/* 方式二： */}
+      <div style={{ color: "gray" }}>
+        <div dangerouslySetInnerHTML={{ __html: svgMathRaw }}></div>
+      </div>
+    </>
   )
 }

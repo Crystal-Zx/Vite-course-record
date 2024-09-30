@@ -1,17 +1,21 @@
-@mainColor: brown;
+// @mainColor: brown;
 
 .wrapper {
   width: 500px;
-  height: (250px * 2);  
+  height: (250px * 2);
   background-color: blanchedalmond;
   .main {
-    height: 600px / 2;  // 默认情况下，less 配置项没有开启 math: "always" 时，未加括号的数学运算表达式不会被 lessc 计算，会直接输出（此时在页面上渲染时该行css会失效）
+    height: 600px / 2; // 默认情况下，less 配置项没有开启 math: "always" 时，未加括号的数学运算表达式不会被 lessc 计算，会直接输出（此时在页面上渲染时该行css会失效）
     background-color: @mainColor;
     // background-color: chocolate;
     filter: blur(100px);
     /** <-- 测试 css.postcss.plugins.postcss-preset-env 插槽的功能  */
-    width: clamp(100px, 30%, 200px); // css 新语法，postcss 会根据vite内置的浏览器兼容表和用户的浏览器版本进行语法降级
-    user-select: none;  // postcss 会自动加上浏览器内核前缀（相当于Autoprefixer）
+    width: clamp(
+      100px,
+      30%,
+      200px
+    ); // css 新语法，postcss 会根据vite内置的浏览器兼容表和用户的浏览器版本进行语法降级
+    user-select: none; // postcss 会自动加上浏览器内核前缀（相当于Autoprefixer）
     /** 测试 css.postcss.plugins.postcss-preset-env 插槽的功能 --> */
   }
 }
